@@ -8,8 +8,7 @@ module.exports = (sequelize, DataTypes) => {
         },
         messageUrl: {
             type: DataTypes.STRING
-        },
-       
+        }
     }, 
     {
         sequelize,
@@ -17,3 +16,4 @@ module.exports = (sequelize, DataTypes) => {
     })
     return Message
 }
+

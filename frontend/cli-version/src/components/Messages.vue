@@ -56,9 +56,16 @@
                             <p class="small" v-if="message.message !== ''"> {{message.message}} </p>
                             <img class="w-100" :src="message.messageUrl" v-if="message.messageUrl !== ''">
                         </div>
-                        <div class="card-footer bg-light text-dark text-left m-0">
+                        <div class="footer">
+                         <div class="card-footer bg-light text-dark text-left m-0">
                             <a :href="'#/commentaires/' + message.id" class="h6 small">Voir les commentaires</a>
                         </div>
+                        <div class="increment">
+                       <p class="likeBtn" @click="likePost(12)">
+                           <i class="fa fa-thumbs-up"></i> like
+                       </p>
+                    </div>
+                    </div>  
                     </div>
                     <NoMessage v-if="noMessage"></NoMessage>
                     
@@ -131,6 +138,7 @@ export default {
                 }) 
             })
         }
+        
     },
     created: function() {
         this.isAdmin = localStorage.getItem("role")
@@ -169,7 +177,38 @@ export default {
         background-color: #f85f06;
     }
     .btn-success{
-        background-color: rgb(48, 48, 238) !important;
-        border-color: rgb(48, 48, 238) !important;
+        background-color: #0d6efd !important;
+        border-color: #0d6efd !important;
     }
+    .m5{
+     width: auto;
+     height: 20px;
+     margin-left: 10px;
+     
+    }
+    .footer{
+        border-top: 1px solid #c2c2c2;
+        display: flex;
+        justify-content: space-between;
+    }
+    .like{
+        border: none;
+        width: auto;
+        height: 17px;
+      
+    }
+    .bouton{
+        border: none;
+        background-color: #f8f9fa;
+    }
+    .increment{
+        display: flex;
+        
+    }
+    .number{
+        margin-left: -7px;
+        margin-right: 10px;
+    }
+    
+
 </style>

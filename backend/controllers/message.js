@@ -1,4 +1,5 @@
 const models = require("../models")
+const message = require("../models/message")
 const Message = models.messages
 const Comment = models.comments
 const User = models.users
@@ -132,4 +133,33 @@ exports.deleteMessage = (req, res, next) => {
   Message.destroy({ where: { id: req.params.id }})
         .then(() => res.status(200).json({ message: "Message supprimé !" }))
         .catch(error => res.status(400).json({ error }))
+}
+
+exports.createLike= (req,res)=> {
+
+    Message.findOne({
+        _id: req.params.id
+    })
+.then( message =>{
+     //l'utilisateur aime 
+    if(req.body.like== 1){
+        message.likes++;
+        message.usersLiked.push(req.body.userId);
+        message.save();
+    }
+    //l'utilisateur s'est trompé 
+    if(req.body.like == 0) {
+        if (message.usersLiked.indexOf(req.body.userId) != -1){
+        message.likes--;
+        message.usersLiked.splice(message.usersLiked.indexOf(req.body.userId), 1);
+    }
+    
+        message.save();
+    }
+    res.status(200).json({message:'like pris en compte'})
+    })
+   .catch(error =>{
+       res.status(500).json({error})
+   });
+
 }

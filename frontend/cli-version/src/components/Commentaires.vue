@@ -12,7 +12,7 @@
                             <div>
                                 <img :src="oneMessage.avatar" height="40" class="m-0 rounded-circle"/>
                                 <span class="small text-dark m-0 p-1">
-                                    Posté par {{oneMessage.firstname.lastname}}
+                                    Posté par <strong>{{oneMessage.firstname +" "+ oneMessage.lastname}}</strong>
                                     <span v-if="!oneMessage.isActive" class="small text-danger">(supprimé)</span>, 
                                     le {{oneMessage.createdAt}}
                                 </span>

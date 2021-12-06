@@ -82,7 +82,7 @@ exports.findOneMessage = (req, res, next) => {
         oneMessage.userId = message.UserId
         oneMessage.avatar = message.User.avatar
         oneMessage.firstname = message.User.firstname
-        oneMessage.lastsname = message.User.lastname
+        oneMessage.lastname = message.User.lastname
         oneMessage.isActive = message.User.isActive
         oneMessage.createdAt = message.createdAt
         oneMessage.message = message.message

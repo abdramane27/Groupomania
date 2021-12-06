@@ -58,6 +58,9 @@ export default {
 }
 .dropdown-menu[data-bs-popper]{
     left: auto !important;
-    right: -50px !important;
+    right: 0px !important;
 }
+
+
+
 </style>

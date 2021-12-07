@@ -6,11 +6,10 @@
                     <div class="card bg-light">
                         <div class="card-body m-0 p-1">
                             <div class="col-12 d-flex flex-column-reverse flex-md-row justify-content-md-center text-dark">
-                                <p class="mb-1 mr-1">© 2021 Groupomania RSi</p>
+                                <p class="mb-1 mr-1" >© 2021 Groupomania RSi</p>
                                 <p class="mb-1 mr-1 d-none d-md-block"> | </p>
                                 <div>
-                                    <a class="mb-1 mr-2 text-primary" href="#/aide">Aide</a>
-                                    <a class="mb-1 mr-1 text-primary" href="mailto:contact@groupomania.fr"> Contact</a>
+                                    <a class="mb-1 mr-1 text-primary" href="mailto:contact@groupomania.fr" style="text-decoration:none"> Contact</a>
                                 </div>
                             </div>
                         </div>
@@ -26,3 +25,9 @@ export default {
     Name: "Footer"
 }
 </script>
+<style >
+.text-primary{
+    font-weight: bold;
+}
+
+</style>

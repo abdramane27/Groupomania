@@ -9,13 +9,15 @@
                         
                     </div>
                     <div class="card-body">
-                        <p>Créer afin d'améloirer les échanges au sein de l'entreprise.</p>
-                        <p>Cette application est strictement réservé au personnel du groupe.</p>
-                        <p>Pour y accéder, merci de vous <router-link to="/connexion">connecter</router-link> ou de vous <router-link to="/inscription">inscrire</router-link> si vous ne l'avez pas encore fait.</p>
-                        <p>Si vous rencontrez un problème ou si vous avez une question, rendez-vous sur la <router-link to="/aide">page d'aide</router-link> ou contactez-nous via la rubrique <a href="email:contactgroupomania.fr">contact</a></p>
+                        <h6>Créer afin d'améloirer les échanges au sein de l'entreprise.</h6>
+                        <h6>Cette application est strictement réservé au personnel du groupe.</h6>
+                        <div class="card-login">
+                        <button class="modal-title h6"><router-link to="/connexion" style="text-decoration:none">Se connecter</router-link></button> 
+                        <button class="modal-title h6"><router-link to="/inscription" style="text-decoration:none">S'inscrire</router-link></button>
+                        </div>   
                     </div>
                     <div class="card-footer bg-light d-flex justify-content-between">
-                        <span class="text-dark">Bonne navigation !</span>
+                        
                     </div>
                 </div>
             </div>
@@ -36,4 +38,28 @@ export default {
     .m-0{
         width: auto;
     }
+    .card-body{
+        text-align: center;
+        
+    }
+    .card-login{
+        margin-top: 20px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        display: flex;
+        flex-direction: column ;
+       align-items: center;
+    }
+    .modal-title{
+        width: 20%;
+        margin-top: 10px;
+        background: #e2e2e2;;
+        border: none;
+        border-radius: 10px;
+        padding: 7px;
+         
+        
+        
+    }
+   
 </style>

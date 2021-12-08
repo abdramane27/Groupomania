@@ -12,7 +12,7 @@
                         <h6>Créer afin d'améloirer les échanges au sein de l'entreprise.</h6>
                         <h6>Cette application est strictement réservé au personnel du groupe.</h6>
                         <div class="card-login">
-                        <button class="modal-title h6"><router-link to="/connexion" style="text-decoration:none">Se connecter</router-link></button> 
+                        <button class="modal-title h6"><router-link to="/connexion" style="text-decoration:none" >Se connecter</router-link></button> 
                         <button class="modal-title h6"><router-link to="/inscription" style="text-decoration:none">S'inscrire</router-link></button>
                         </div>   
                     </div>
@@ -53,7 +53,7 @@ export default {
     .modal-title{
         width: 20%;
         margin-top: 10px;
-        background: #e2e2e2;;
+        background: #eeeded;;
         border: none;
         border-radius: 10px;
         padding: 7px;

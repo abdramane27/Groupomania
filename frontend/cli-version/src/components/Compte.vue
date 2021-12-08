@@ -13,7 +13,7 @@
                         <div class="card-body" style="background-color:#D4D4D4;">
                             <div class="row border d-flex align-items-center m-2 p-0" style="background-color: ghostwhite;">
                                 <div class="col-12 col-md-4 text-center">
-                                        <img :src="avatar" class="rounded-circle m-1 p-0" height="128"/>
+                                        <img :src="avatar" class="rounded-circle m-1 p-0" height="128" alt="photo de profil"/>
                                         <a href="" class="btn btn-sm btn-primary mb-2 p-1" data-bs-toggle="modal" data-bs-target="#modalAvatar">Changer de photo</a>
                                 </div>
                                 <div class="modal fade" id="modalAvatar" tabindex="-1" aria-labelledby="modalAvatar" aria-hidden="true">
@@ -25,11 +25,11 @@
                                                 </div>
                                                 <div class="row modal-body">
                                                     <div class="col-6 justify-content-center">
-                                                        <img :src="avatar" class="w-100 rounded-circle">
+                                                        <img :src="avatar" class="w-100 rounded-circle" alt="photo de profil">
                                                         <p class="small text-center">Photo actuelle</p>
                                                     </div>
                                                     <div class="col-6 justify-content-center">
-                                                        <img :src="newAvatar" class="w-100 rounded-circle">
+                                                        <img :src="newAvatar" class="w-100 rounded-circle" alt="photo de profil" >
                                                         <p class="small text-center">Nouvelle photo</p>
                                                     </div>
                                                     <div class="col-12 justify-content-center">
@@ -65,7 +65,7 @@
                         <div class="card-footer" style="background-color:ghostwhite;">
                             <div class="row d-flex align-items-center m-0 p-0">
                                 <div class="col-12">
-                                    <a href="" data-toggle="modal" data-target="#modalDeleteAccount" class="btn btn-sm btn-block btn-danger">Supprimer mon compte !</a>
+                                    <a href="" data-bs-toggle="modal" data-bs-target="#modalDeleteAccount" class="btn btn-sm btn-block btn-danger">Supprimer mon compte !</a>
                                     <div class="modal fade" id="modalDeleteAccount" data-backdrop="static"  data-keyboard="false" tabindex="-1" aria-labelledby="modalDeleteAccount" aria-hidden="true">
                                         <div class="modal-dialog modal-dialog-centered">
                                             <div class="modal-content border border-danger">

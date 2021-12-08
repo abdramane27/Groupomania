@@ -44,3 +44,4 @@ exports.modifyUser = (req, res, next) => {
       .then(() => res.status(200).json({ ...userObject }))
       .catch(error => res.status(400).json({ error }))
 }
+

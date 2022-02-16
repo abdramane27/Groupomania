@@ -4,7 +4,7 @@ Comme son nom l'indique, ce dossier contient la partie serveur de notre applicat
 
 Téléchargez et ouvrez Node.js.
 Tapez la commande suivante : cd backend.
-Puis lancez le serveur en tapant la commande : nodemon server.
+Puis lancez le serveur en tapant la commande : node server.
 Le serveur doit fonctionner sur http://localhost:3000/.
 Frontend de dossier
 Comme son nom l'indique, ce dossier contient la partie site de notre application.

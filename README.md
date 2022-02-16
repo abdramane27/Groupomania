@@ -10,7 +10,7 @@ Frontend de dossier
 Comme son nom l'indique, ce dossier contient la partie site de notre application.
 
 Téléchargez et ouvrez Node.js.
-Tapez la commande suivante : npm start.
+Tapez la commande suivante : npm run serve
 Puis lancez le serveur en tapant la commande : npm run serve dans le dossier cli-version.
 Le serveur doit fonctionner sur http://localhost:8080/.
 REMARQUES:
